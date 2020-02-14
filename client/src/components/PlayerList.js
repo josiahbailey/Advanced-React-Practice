@@ -5,7 +5,7 @@ const PlayerList = ({players}) => {
     return (  
         <div className='container'>
             {players.map(plr => (
-                <PlayerCard player={plr} />
+                <PlayerCard key={plr.id} player={plr} />
             ))}
         </div>
     );

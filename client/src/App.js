@@ -22,10 +22,14 @@ class App extends React.Component {
         console.log('ERROR', err)
       })
     }
+    //<h1>Happy building <span role="img" aria-label="Smiling emoji">😃</span></h1>
     render() {
       return (
         <div className="App">
-          <h1>Happy building <span role="img" aria-label="Smiling emoji">😃</span></h1>
+        <nav className='navbar'>
+          <h1 className='nav-title'>Title</h1>
+          <button className='button'></button>
+        </nav>
           <PlayerList players={this.state.players}/>
         </div>
       )
